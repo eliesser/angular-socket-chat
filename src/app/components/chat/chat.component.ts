@@ -21,7 +21,6 @@ export class ChatComponent implements OnInit {
     this.messageSuscription = this.chatService
       .getMessages()
       .subscribe((msg) => {
-        console.log(msg);
         this.messages.push(msg);
 
         setTimeout(() => {
